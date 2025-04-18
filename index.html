@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badmus T. Bamidele</title>
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="myportfolio.css">
+</head>
+<body class="w-full">
+    <main>
+        <nav class="w-full shadow-md flex justify-between items-center" id="nav">
+            <p id="logo">Tao<span class="colored-logo">Codeux</span></p>
+            <div id="moon">
+                <i class="icofont-moon rounded-full"></i>
+            </div>
+            <div class="web-li flex items-center gap-20">
+                <ul class="flex gap-16">
+                    <li class="nav-li"><a href="#home">Home</a></li>
+                    <li class="nav-li"><a href="#about">About</a></li>
+                    <li class="nav-li"><a href="#projects">Projects</a></li>
+                    <li class="nav-li"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- mobile nav starts here -->
+            <div class="hamburger" id="hamburger" onclick="openDropDown()">
+                <i class="icofont-navigation-menu"></i>
+            </div>
+            <p class="close"><i class="icofont-ui-close"></i></p>
+        </nav>
+        <div class="hidden-dd" id="hidden-dd">
+            <span class="close-icon" id="close" onclick="closeDropDown()"><i class="icofont-close"></i></span>
+            <ul>
+                <li class="hidden-li"><a href="#home">Home</a></li>
+                <li class="hidden-li"><a href="#about">About</a></li>
+                <li class="hidden-li"><a href="#projects">Projects</a></li>
+                <li class="hidden-li"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <!-- nav finished here -->
+        <!-- home section starts here -->
+        <section id="home" class="w-full flex justify-between">
+            <div class="left-home">
+                <p class="hiya">Hiya!<span class="emoji wave" role="img" aria-label="hand wave"></span></p>
+                <p class="job-des">I'm <span class="boldName">Bamidele Badmus</span></p>
+                <p id="home-abt">And I'm a <span id="change-text"></span></p>
+                <p class="bio-home">Crafting user-centric designs is my forte. Let's turn your ideas into captivating web experiences!</p>
+                <div class="btn-div">
+                    <button class="hire-btn text-white rounded">
+                        <a href="mailto:taofeekatb1@gmail.com">HIRE ME</a>
+                    </button>
+                    <button class="view-btn rounded" onclick="openResume()" id="view-btn">
+                        VIEW RESUME
+                    </button>
+                </div>
+                <div class="socials-div flex gap-6 items-center">
+                    <a href="https://www.linkedin.com/in/badmus-bamidele-26a82b240?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                        <img src="portfolio images and icon/1656999237linkedin-logo-for-email-signature.webp" class="socials-icon" alt="">
+                    </a>
+                    <a href="https://x.com/taocodeux?s=11&t=tgAgp5BCyo17ptpW04JhSA">
+                        <img src="portfolio images and icon/twitter.png" class="socials-icon" alt="">
+                    </a>
+                    <a href="https://www.tiktok.com/@taocodeux?_t=ZM-8vdQza4sSYx&_r=1">
+                        <img src="portfolio images and icon/tik.png" class="socials-icon" alt="">
+                    </a>
+                    <a href="https://github.com/taocodeux">
+                        <img src="portfolio images and icon/github.png" class="socials-icon" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="right-home">
+                <div class="profile-circle1">
+                    <img src="portfolio images and icon/WhatsApp_Image_2024-12-20_at_15.38.16_b437f3ff-removebg-preview.png" alt="" class="firstPix">
+                </div>
+            </div>
+        </section>
+        <!-- home section ends here -->
+        <!-- about section starts here -->
+        <section id="about" class="w-full flex justify-between">
+            <div class="left-home">
+                <p class="abt-me">About Me</p>
+                <p class="abt-me-tx">
+                    I'm Bamidele Badmus and I'm a Web developer based in the United kingdom.
+                </p>
+                <p class="abt-me-tx">
+                    A microbiologist turned web developer with clear skills in product design. My journey from the design world has cultivated a unique blend of critical thinking and creative problem-solving. With a passion for developing user-centric design and turning ideas into interactive web experiences, I ensure excellent user experience, beautiful visuals and clean accessible code. And I am currently improving my skills in MERN stack.
+                </p>
+                <p class="abt-me mt-4 mb-2">Core Technologies</p>
+                <div class="skills-div">
+                    <div><span class="skills-logo">Frontend</span>: React, JavaScript, HTML, CSS, Tailwind, BootStrap, Redux</div>
+                    <div><span class="skills-logo">Tools</span>: Git, Github, Vscode, Figma</div>
+                    <div><span class="skills-logo">Skillset</span>: API Integration, Cross-browser Compatibility, Responsive Design</div>
+                </div>
+            </div>
+            <div class="right-home">
+                <div class="profile-circle2">
+                    <img src="portfolio images and icon/WhatsApp_Image_55.png" class="firstPix2" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- about section ends here -->
+        <!-- projects section starts here -->
+        <section id="projects" class="w-full py-10">
+            <p class="abt-me mb-3">Projects</p>
+            <div class="projects-cover">
+                <div class="projects-container">
+                    <div class="ribbon">
+                        <span>Responsive</span>
+                    </div>
+                    <div class="project-img">
+                        <img src="portfolio images and icon/accessRide mockup.png" alt="" class="projects-card">
+                    </div>
+                    <div class="projects-abt">
+                        <p class="pro-title">AccessRide App</p>
+                        <p class="pro-txt"><span class="pro-sub">Description:</span> A responsive and accessible ride-hailing app with custom backend, form validation, user authentication, map integration, and a demo payment system (Paystack). Features real-time location tracking and API integration for seamless user experience.</p>
+                        <p class="pro-txt"><span class="pro-sub">Tech Stack:</span> React, Tailwind CSS, Nominatim API, OpenRouteService API and Paystack API</p>
+                        <a href="https://accessride.netlify.app/">
+                            <button class="open-btn px-4 py-1 rounded">Visit Page</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="projects-container">
+                    <div class="ribbon">
+                        <span>Responsive</span>
+                    </div>
+                    <div class="project-img">
+                        <img src="portfolio images and icon/piggy mockup.png" alt="" class="projects-card">
+                    </div>
+                    <div class="projects-abt">
+                        <p class="pro-title">PiggyVest Clone</p>
+                        <p class="pro-txt"><span class="pro-sub">Description:</span> A responsive finance app clone that allows users to send and receive money through custom backend accounts. It includes user authentication, profile management, and a demo payment system (Paystack).</p>
+                        <p class="pro-txt"><span class="pro-sub">Tech Stack:</span> JavaScript, Bootstrap, CSS and Paystack API</p>
+                        <a href="https://piggyvestappclone.netlify.app/">
+                            <button class="open-btn px-4 py-1 rounded">Visit Page</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="projects-container">
+                    <div class="ribbon">
+                        <span>Responsive</span>
+                    </div>
+                    <div class="project-img">
+                        <img src="portfolio images and icon/Social media dashboard mockup.png" alt="" class="projects-card">
+                    </div>
+                    <div class="projects-abt">
+                        <p class="pro-title">Social Media Dashboard</p>
+                        <p class="pro-txt"><span class="pro-sub">Description:</span> A responsive social media dashboard featuring user authentication, dynamic dashboard, media and content uploads, and profile management, and localStorage-based data handling. Focused on core functionality over visual styling</p>
+                        <p class="pro-txt"><span class="pro-sub">Tech Stack:</span> JavaScript, HTML and CSS</p>
+                        <a href="https://socialmediadashboad.netlify.app/">
+                            <button class="open-btn px-4 py-1 rounded">Visit Page</button>
+                        </a>
+                    </div>
+                </div>            
+                <div class="projects-container">
+                    <div class="ribbon">
+                        <span>Responsive</span>
+                    </div>
+                    <div class="project-img">
+                        <img src="portfolio images and icon/grad calc mockup.png" alt="" class="projects-card">
+                    </div>
+                    <div class="projects-abt">
+                        <p class="pro-title">Grade Calculator Website</p>
+                        <p class="pro-txt"><span class="pro-sub">Description:</span> A responsive grade calculator that evaluates user-inputted scores and provides corresponding grade classifications. Designed for simplicity and accuracy.</p>
+                        <p class="pro-txt"><span class="pro-sub">Tech Stack:</span> JavaScript, BootStrap and CSS</p>
+                        <a href="https://gradcalc.netlify.app/">
+                            <button class="open-btn px-4 py-1 rounded">Visit Page</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="projects-container">
+                    <div class="ribbon">
+                        <span>Responsive</span>
+                    </div>
+                    <div class="project-img">
+                        <img src="portfolio images and icon/calc mockup.png" alt="" class="projects-card">
+                    </div>
+                    <div class="projects-abt">
+                        <p class="pro-title">Basic Calculator</p>
+                        <p class="pro-txt"><span class="pro-sub">Description:</span> A lightweight windows calculator clone implementing fundamental arithmetic operations. It allows users to perform addition, subtraction, multiplication, and division through a responsive, minimalist interface.</p>
+                        <p class="pro-txt"><span class="pro-sub">Tech Stack:</span> JavaScript, BootStrap and CSS</p>
+                        <a href="https://windowscalc.netlify.app/">
+                            <button class="open-btn px-4 py-1 rounded">Visit Page</button>
+                        </a>
+                    </div>
+                </div>                
+                <div class="projects-container">
+                    <div class="ribbon">
+                        <span>Responsive</span>
+                    </div>
+                    <div class="project-img">
+                        <img src="portfolio images and icon/Shopping cart mockup.png" alt="" class="projects-card">
+                    </div>
+                    <div class="projects-abt">
+                        <p class="pro-title">Self-Shopping Cart</p>
+                        <p class="pro-txt"><span class="pro-sub">Description:</span> A responsive shopping cart application built to handle item additions, quantity adjustments, and real-time total price calculations. It features dynamic editing and removal of items, updating the cart automatically.</p>
+                        <p class="pro-txt"><span class="pro-sub">Tech Stack:</span> JavaScript,BootStrap and CSS</p>
+                        <a href="https://shoppingcartcalc.netlify.app/">
+                            <button class="open-btn px-4 py-1 rounded">Visit Page</button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- projects section ends here -->
+        <!-- contact section starts here -->
+        <section id="contact" class="w-full py-20 flex flex-col justify-center items-center">
+            <p class="abt-me">Contact Me</p>
+            <div class="socials-div flex gap-6 items-center mt-6">
+                <a href="https://www.linkedin.com/in/badmus-bamidele-26a82b240?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                    <img src="portfolio images and icon/1656999237linkedin-logo-for-email-signature.webp" class="socials-icon" alt="">
+                </a>
+                <a href="https://x.com/taocodeux?s=11&t=tgAgp5BCyo17ptpW04JhSA">
+                    <img src="portfolio images and icon/twitter.png" class="socials-icon" alt="">
+                </a>
+                <a href="https://www.tiktok.com/@taocodeux?_t=ZM-8vdQza4sSYx&_r=1">
+                    <img src="portfolio images and icon/tik.png" class="socials-icon" alt="">
+                </a>
+                <a href="https://github.com/taocodeux">
+                    <img src="portfolio images and icon/github.png" class="socials-icon" alt="">
+                </a>
+            </div>
+            <div class="quote-div">
+                <p>"Every line of code is a step forward in your journey as a developer."</p>
+                <figcaption>~Anonymous</figcaption>
+            </div>
+        </section>
+        <!-- contact section ends here -->
+        <!-- footer section starts here -->
+        <footer>
+            &copy;2023 <span>TaoCodeUx</span>
+        </footer>
+        <!-- footer section ends here -->
+    </main>
+    <script src="myportfolio.js"></script>
+</body>
+</html>
