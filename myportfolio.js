@@ -69,7 +69,7 @@ document.querySelectorAll('.hidden-li a').forEach(item => {
 function keepHamburgerout() {
     if (window.innerWidth >= 320 && window.innerWidth <= 480) {
         myHamburger.style.display = "block"
-        myNav.style.padding = "1.5rem 2rem 1.5rem 2rem"
+        myNav.style.padding = "1.5rem"
     } else if(window.innerWidth > 480 && window.innerWidth <= 768) {
         myHamburger.style.display = "block"
         myNav.style.padding = "1.5rem"
