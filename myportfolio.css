@@ -328,8 +328,8 @@ figcaption{
 /* projects css ends here  */
 #projects{
     background-color: var(--ashbg);
-    padding-left: 5rem;
-    padding-right: 5rem;
+    /* padding-left: 5rem;
+    padding-right: 5rem; */
     flex-wrap: wrap;
 }
 .projects-cover{
@@ -490,11 +490,11 @@ footer{
     }
     #home{
         flex-direction: column;
-        height: 100vh;
+        /* height: 100vh; */
     }
     #about{
         flex-direction: column;
-        height: 100vh;
+        /* height: 100vh; */
     }
     .left-home{
         width: 100%;
@@ -504,7 +504,7 @@ footer{
         justify-content: center;
         display: flex;
         align-items: center;
-        height: 100vh;
+        /* height: 100vh; */
     }
     .hiya{
         font-size: 24px;
@@ -517,7 +517,7 @@ footer{
         color: var(--lightblack);
     }
     .boldName{
-        font-size: 32px;
+        font-size: 28px;
         color:var(--reddishbrown);
         text-wrap: balance;
         font-weight: 600;
@@ -525,12 +525,12 @@ footer{
     #home-abt{
         font-size: 24px;
         font-weight: 600;
-        height: 100px;
+        height: 80px;
         color: var(--lightblack);
     }
     #change-text{
         color:var(--reddishbrown);
-        font-size: 32px;
+        font-size: 28px;
         font-weight: 600;
     }
     .bio-home{
@@ -542,7 +542,7 @@ footer{
         display: flex;
         gap: 10px;
         width: 100%;
-        margin-top: 40px;
+        margin-top: 30px;
     }
     .hire-btn{
         background-color: #8A6A6A;
@@ -593,8 +593,8 @@ footer{
     }
     .profile-circle1{
         position: absolute;
-        width: 300px;
-        height: 300px; 
+        width: 250px;
+        height: 250px; 
         margin: auto;
         justify-content: center;
         align-items: center;
@@ -604,16 +604,16 @@ footer{
         display: flex;
     }
     .firstPix{
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         object-fit: cover;
         filter: drop-shadow(10px 10px 50px rgba(0,0,0,0.5));
         border-radius: 71% 26% 75% 25% / 71% 62% 35% 27%;
     }
     .profile-circle2{
         position: absolute;
-        width: 300px; 
-        height: 300px; 
+        width: 250px; 
+        height: 250px; 
         margin: auto;
         justify-content: center;
         align-items: center;
@@ -623,8 +623,8 @@ footer{
         display: flex;
     }
     .firstPix2{
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         object-fit: cover;
         filter: drop-shadow(10px 10px 50px rgba(0,0,0,0.5));
         border-radius: 21% 77% 55% 39% / 27% 38% 60% 70%;
@@ -644,13 +644,13 @@ footer{
     }
     #home{
         flex-direction: column;
-        height: 100vh;
-        justify-content: center;
+        /* height: 100vh; */
+        /* justify-content: center; */
     }
     #about{
         flex-direction: column;
-        height: 100vh;
-        display: flex;
+        /* height: 100vh; */
+        /* display: flex; */
     }
     .left-home{
         width: 100%;
@@ -689,10 +689,10 @@ footer{
     }
     .right-home{
         width: 100%;
-        justify-content: center;
-        display: flex;
+        /* justify-content: center; */
+        /* display: flex; */
         align-items: center;
-        height: 100vh;
+        /* height: 100vh; */
     } */
     .skills-div{
         width: 100%;
