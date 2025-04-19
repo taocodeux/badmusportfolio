@@ -66,12 +66,14 @@ document.querySelectorAll('.hidden-li a').forEach(item => {
 })
 //stop hambruger from showing on big screens
 function keepHamburgerout() {
-    if (window.innerWidth >= 320 && window.innerWidth <= 480) {
+    const viewportWidth = document.documentElement.clientWidth; 
+    console.log("Viewport Width:", viewportWidth);
+    if (viewportWidth >= 320 && viewportWidth <= 480) {
         myHamburger.style.display = "block"
         myNav.style.padding = "1.5rem"
-    } else if(window.innerWidth > 480 && window.innerWidth <= 768) {
+    } else if(viewportWidth > 480 && viewportWidth <= 1025) {
         myHamburger.style.display = "block"
-        myNav.style.padding = "1.5rem"
+        myNav.style.padding = "2rem"
     } else{
         myHamburger.style.display = "none"
         myNav.style.padding = "1.5rem 5rem"
@@ -106,13 +108,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         myAbout.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue("--whitesw")
         myContact.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue("--whitesw")
-        myHome.style.backgroundColor = isDarkMode ? "#000" : getComputedStyle(document.documentElement).getPropertyValue("--ashbg")
-        myProjects.style.backgroundColor = isDarkMode ? "#000" : getComputedStyle(document.documentElement).getPropertyValue("--ashbg")
-        myDropDown.style.backgroundColor = isDarkMode ? "#000" : getComputedStyle(document.documentElement).getPropertyValue("--reddishbrown")
+        myHome.style.backgroundColor = isDarkMode ? "#313131" : getComputedStyle(document.documentElement).getPropertyValue("--ashbg")
+        myProjects.style.backgroundColor = isDarkMode ? "#313131" : getComputedStyle(document.documentElement).getPropertyValue("--ashbg")
+        myDropDown.style.backgroundColor = isDarkMode ? "#313131" : getComputedStyle(document.documentElement).getPropertyValue("--reddishbrown")
 
         // to change back to light mode
         const elements = [
-            { id: "nav", style: { backgroundColor: isDarkMode ? "#000" : getComputedStyle(document.documentElement).getPropertyValue("--ashbg") } },
+            { id: "nav", style: { backgroundColor: isDarkMode ? "#313131" : getComputedStyle(document.documentElement).getPropertyValue("--ashbg") } },
             { id: "moon", style: { backgroundColor: isDarkMode ? getComputedStyle(document.documentElement).getPropertyValue("--ashbg") : getComputedStyle(document.documentElement).getPropertyValue("--lightblack") } },
             { id: "logo", style: { color: isDarkMode ? getComputedStyle(document.documentElement).getPropertyValue("--reddishbrown") : getComputedStyle(document.documentElement).getPropertyValue("--initial-text-color") } },
         ]
@@ -145,10 +147,10 @@ document.addEventListener("DOMContentLoaded", () => {
             myHome.classList.add("dark-mode")
             myContact.classList.add("dark-mode")
             myProjects.classList.add("dark-mode")
-            hireBtn.style.color = "#000" 
+            hireBtn.style.color = "#313131" 
             viewBtn.style.color = getComputedStyle(document.documentElement).getPropertyValue("--reddishbrown")
             viewBtn.addEventListener("mouseenter", () => { 
-                viewBtn.style.color = "#000"
+                viewBtn.style.color = "#313131"
             })
             viewBtn.addEventListener("mouseleave", () => {
                 viewBtn.style.color = getComputedStyle(document.documentElement).getPropertyValue("--reddishbrown")
@@ -156,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
             openBtns.forEach(openBtn => {
                 openBtn.style.color = getComputedStyle(document.documentElement).getPropertyValue("--reddishbrown") 
                 openBtn.addEventListener("mouseenter", () => { 
-                    openBtn.style.color = "#000"
+                    openBtn.style.color = "#313131"
                 })
                 openBtn.addEventListener("mouseleave", () => { 
                     openBtn.style.color = getComputedStyle(document.documentElement).getPropertyValue("--reddishbrown")
