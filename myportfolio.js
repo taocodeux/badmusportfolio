@@ -32,7 +32,6 @@ let myHamburger = document.getElementById("hamburger")
 let myLogo = document.getElementById("logo")
 let myMoon = document.getElementById("moon")
 let myNav = document.getElementById("nav")
-let close = document.getElementById("close")
 
 function openDropDown() {
     let dropdownStyle = window.getComputedStyle(myDropDown)
@@ -100,6 +99,8 @@ document.addEventListener("DOMContentLoaded", () => {
         let hireBtn = document.querySelector(".hire-btn")
         let viewBtn = document.querySelector(".view-btn")
         let openBtns = document.querySelectorAll(".open-btn")
+        // let close = document.getElementById("close")
+
 
         const isDarkMode = !myHome.classList.contains("dark-mode")
 
@@ -107,6 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
         myContact.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue("--whitesw")
         myHome.style.backgroundColor = isDarkMode ? "#000" : getComputedStyle(document.documentElement).getPropertyValue("--ashbg")
         myProjects.style.backgroundColor = isDarkMode ? "#000" : getComputedStyle(document.documentElement).getPropertyValue("--ashbg")
+        myDropDown.style.backgroundColor = isDarkMode ? "#000" : getComputedStyle(document.documentElement).getPropertyValue("--reddishbrown")
 
         // to change back to light mode
         const elements = [
