@@ -124,6 +124,8 @@ nav{
     display: flex;
     position: relative;
     flex-direction: column;
+    align-items: center;
+    min-height: 100%;
     flex: 1;
     width: 50%;
     animation: fromRight 2s forwards;
@@ -255,13 +257,8 @@ nav{
 }
 .profile-circle1{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width:450px;
     height:450px; 
-    justify-content: center;
-    align-items: center;
     border-radius: 71% 26% 75% 25% / 71% 62% 35% 27%;
     background-color: var(--reddishbrown);
     z-index: -1;
@@ -269,13 +266,8 @@ nav{
 }
 .profile-circle2{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width:450px; 
     height:450px; 
-    justify-content: center;
-    align-items: center;
     border-radius: 21% 77% 55% 39% / 27% 38% 60% 70%;
     background-color: var(--ashbg);
     z-index: -1;
@@ -491,7 +483,7 @@ footer{
 
 
 /* responsiveness for phones and small screens */
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .nav-li{
         display: none;
     }
@@ -501,7 +493,9 @@ footer{
     }
     #home{
         flex-direction: column;
-        gap: 0;
+        gap: 4.2rem;
+        min-height: auto;
+
     }
     #about{
         flex-direction: column;
@@ -604,9 +598,9 @@ footer{
     }
     .profile-circle1{
         position: absolute;
-        width: 300px;
-        height: 300px; 
-        margin: -2rem auto;
+        width: 280px;
+        height: 280px; 
+        margin: -1.5rem auto;
         justify-content: center;
         align-items: center;
         border-radius: 71% 26% 75% 25% / 71% 62% 35% 27%;
@@ -615,16 +609,16 @@ footer{
         display: flex;
     }
     .firstPix{
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 280px;
         object-fit: cover;
         filter: drop-shadow(10px 10px 50px rgba(0,0,0,0.5));
         border-radius: 71% 26% 75% 25% / 71% 62% 35% 27%;
     }
     .profile-circle2{
         position: absolute;
-        width: 300px; 
-        height: 300px; 
+        width: 280px; 
+        height: 280px; 
         margin: auto;
         justify-content: center;
         align-items: center;
@@ -634,8 +628,8 @@ footer{
         display: flex;
     }
     .firstPix2{
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 280px;
         object-fit: cover;
         filter: drop-shadow(10px 10px 50px rgba(0,0,0,0.5));
         border-radius: 21% 77% 55% 39% / 27% 38% 60% 70%;
@@ -646,7 +640,7 @@ footer{
 }
 
 /* responsiveness for tablets*/
-@media screen and (min-width: 481px) and (max-width: 1026px){
+@media screen and (min-width: 481px) and (max-width: 1024px) {
     .hamburger{
         display: block;
         font-size: 25px;
@@ -659,11 +653,11 @@ footer{
     }
     #home{
         flex-direction: column;
-        gap: 0;
+        gap: 2rem;
     }
     #about{
         flex-direction: column;
-        gap: 0;
+        gap: 2rem;
     }
     .left-home{
         width: 100%;

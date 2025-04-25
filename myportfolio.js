@@ -66,12 +66,12 @@ document.querySelectorAll('.hidden-li a').forEach(item => {
 })
 //stop hambruger from showing on big screens
 function keepHamburgerout() {
-    const viewportWidth = document.documentElement.clientWidth; 
-    console.log("Viewport Width:", viewportWidth);
-    if (viewportWidth >= 320 && viewportWidth <= 480) {
+    const viewportWidth = document.documentElement.clientWidth
+
+    if (viewportWidth <= 480) {
         myHamburger.style.display = "block"
         myNav.style.padding = "1.5rem"
-    } else if(viewportWidth > 480 && viewportWidth <= 1025) {
+    } else if(viewportWidth > 480 && viewportWidth <= 1024){
         myHamburger.style.display = "block"
         myNav.style.padding = "2rem"
     } else{
@@ -80,8 +80,8 @@ function keepHamburgerout() {
     }
 }
 
-window.addEventListener("resize", keepHamburgerout);
-keepHamburgerout(); 
+window.addEventListener("resize", keepHamburgerout)
+keepHamburgerout()
 
 //open resume
 let viewBtn =document.getElementById("view-btn")
